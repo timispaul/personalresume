@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Morgan | Resume</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --line: #e5e7eb;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card: #111827;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #60a5fa;
+        --line: #374151;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 24px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+    }
+
+    h1 { margin: 0; font-size: 2rem; }
+    h2 {
+      margin: 24px 0 8px;
+      font-size: 1.1rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+    }
+
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    .contact { margin-top: 8px; }
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    ul { margin: 8px 0 0 18px; }
+    .job { margin-top: 12px; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Alex Morgan</h1>
+      <p class="muted">Frontend Developer</p>
+      <p class="contact">
+        <a href="mailto:alex@example.com">alex@example.com</a> ·
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a> ·
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Developer with 4+ years building accessible and responsive web experiences using HTML, CSS, JavaScript, and React.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <article class="job">
+        <div class="job-header">
+          <span>Frontend Developer · BrightApps</span>
+          <span class="muted">2022–Present</span>
+        </div>
+        <ul>
+          <li>Built reusable UI components that improved feature delivery speed.</li>
+          <li>Collaborated with design and backend teams to ship product updates weekly.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="job-header">
+          <span>Web Developer · Pixel Studio</span>
+          <span class="muted">2020–2022</span>
+        </div>
+        <ul>
+          <li>Developed marketing and e-commerce pages for small businesses.</li>
+          <li>Improved Lighthouse performance scores across client websites.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p>HTML, CSS, JavaScript, React, Git, Accessibility, Responsive Design</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>B.S. in Computer Science, State University</p>
+    </section>
+  </main>
+</body>
+</html>
