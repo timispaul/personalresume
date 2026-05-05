@@ -1,3 +1,7 @@
-# personalresume
-My resume website created with React.js and Material UI.
-I hope it will be an interesting project to see.
+# Minimal Resume Website
+
+A single-page resume website built with plain HTML and CSS.
+
+## Run locally
+
+Open `index.html` in any browser.
